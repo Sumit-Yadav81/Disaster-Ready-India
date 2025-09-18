@@ -47,7 +47,11 @@ const translations = {
     tsunamis_title: { en: "Tsunami Awareness", hi: "सुनामी जागरूकता", bn: "সুনামি সচেতনতা" },
     droughts_title: { en: "Drought Resilience", hi: "सूखा लचीलापन", bn: "খরা স্থিতিস্থাপকতা" },
     heatwaves_title: { en: "Heatwave Protection", hi: "हीटवेव से बचाव", bn: "তাপপ্রবাহ সুরক্ষা" },
+<<<<<<< HEAD
     case_study_title: { en: "Case Study Analysis", hi: "केस स्टडी", bn: "কেস স্টাডি বিশ্লেষণ" },
+=======
+    case_study_title: { en: "Case Study Analysis", hi: "केस স্টাডি বিশ্লেষণ", bn: "কেস স্টাডি বিশ্লেষণ" },
+>>>>>>> 0728f0a2113bd324c3e4de52d9045b01bfeba077
 };
 
 // --- DATA OBJECTS ---
@@ -434,6 +438,7 @@ function showAlertsModal() {
     }
     showModal(`Live Alert: ${userProgress.selectedState || "India"}`, `Status: ${alertData.level}`, modalContent);
 }
+<<<<<<< HEAD
 function confirmSOSCall(event) {
     // Prevent the link from firing immediately
     event.preventDefault();
@@ -446,6 +451,8 @@ function confirmSOSCall(event) {
         window.location.href = "tel:112";
     }
 }
+=======
+>>>>>>> 0728f0a2113bd324c3e4de52d9045b01bfeba077
 
 function startRelevantDrill(disasterName) {
     hideModal();
@@ -764,9 +771,13 @@ function initMap() {
             projection: am5map.geoMercator(), 
             homeZoomLevel: 1.2, 
             homeGeoPoint: { latitude: 22, longitude: 82 },
+<<<<<<< HEAD
             maxZoomLevel: 16,
             maxPanOut: 0,
             wheelModifierKey: "ctrlKey" 
+=======
+            maxZoomLevel: 16
+>>>>>>> 0728f0a2113bd324c3e4de52d9045b01bfeba077
         }));
         
         mapChart.set("wheelY", "zoom");
